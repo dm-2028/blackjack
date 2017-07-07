@@ -70,14 +70,30 @@ namespace WindowsFormsApp4
             if (DealerHand.Bust)
             {
                 panel2.Visible = true;
-                EndText.Text = "Dealer Busted! You Win!");
+                EndText.Text = "Dealer Busted! You Win!";
 
+            }
+            else if(DealerHand.total < PlayerHands[currHand].total)
+            {
+                panel2.Visible = true;
+                EndText.Text = "Dealer has " + DealerHand.total + ", you have " + PlayerHands[currHand].total + ", you win!";
+            }
+            else if(DealerHand.total == PlayerHands[currHand].total)
+            {
+                panel2.Visible = true;
+                EndText.Text = "You and the Dealer both have " + DealerHand.total + ", it's a push";
+            }
+            else
+            {
+                panel2.Visible = true;
+                EndText.Text = "The Dealer's " + DealerHand.total + " beats your " + PlayerHands[currHand].total + ", too bad";
             }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            textBox1.Text += PlayerHands[currHand].Deal(cards).getCard().ToString();
+            button3_Click(sender, e);
         }
 
         private void button5_Click(object sender, EventArgs e)

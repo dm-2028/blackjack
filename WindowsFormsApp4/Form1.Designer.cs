@@ -134,9 +134,9 @@
             // 
             this.panel2.Controls.Add(this.EndText);
             this.panel2.Controls.Add(this.button6);
-            this.panel2.Location = new System.Drawing.Point(237, 298);
+            this.panel2.Location = new System.Drawing.Point(235, 298);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(286, 129);
+            this.panel2.Size = new System.Drawing.Size(288, 129);
             this.panel2.TabIndex = 6;
             this.panel2.Visible = false;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
@@ -153,9 +153,9 @@
             // 
             // EndText
             // 
-            this.EndText.Location = new System.Drawing.Point(77, 23);
+            this.EndText.Location = new System.Drawing.Point(36, 23);
             this.EndText.Name = "EndText";
-            this.EndText.Size = new System.Drawing.Size(139, 20);
+            this.EndText.Size = new System.Drawing.Size(230, 20);
             this.EndText.TabIndex = 1;
             this.EndText.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
